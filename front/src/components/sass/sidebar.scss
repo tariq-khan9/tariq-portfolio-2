@@ -1,0 +1,48 @@
+@import '../sass/main.scss';
+
+.sidebar {
+    background-color: hsla(228, 100%, 3%, 0.5);
+    width: 220px;
+    height: 100vh;
+    left: -250px;
+    z-index: 1;
+    position: fixed;
+    transition: all 1s ease;
+    font-weight: 300;
+
+    &.active {
+       left: 0;
+        
+    }
+
+    ul{
+        margin-top: 120px;
+        font-size: 25px;
+        list-style: none;
+        color: $color-3;
+        
+       li{
+         margin-bottom: 25px;
+         cursor: pointer;
+         a {
+            text-decoration: none;
+            font-size: inherit;
+            color: inherit;
+         }
+         &:hover {
+            font-weight: 400;
+            color: $color-3;
+         }
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+}

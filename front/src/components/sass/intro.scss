@@ -1,0 +1,67 @@
+@import '../sass/main.scss';
+.intro {
+    //background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+    top: 80px;
+    display: flex;
+
+    .left{
+        width: 50%;
+        height: 100vh;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;  
+        color: $color-3;
+        h1{
+            margin: 0;
+            font-weight: 500;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 50px;
+            text-transform: uppercase;
+            text-shadow: -2px 0px 5px $color-2;
+        }
+         h4{
+            margin: 0;
+            font-weight: 500;
+            font-style: oblique;
+         } 
+         h5{
+            margin: 0;
+            font-weight: 400;
+            letter-spacing: 0.5rem;
+        }
+    }
+    .right{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex: 3;
+        position: relative;
+        padding-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+
+        
+        
+        img{
+            height: 300px;
+            position:absolute;
+            padding: 45px;
+            
+            border-radius: 50%;
+            animation: animate 3s infinite ease alternate;
+            @keyframes animate {
+                to{
+                    
+                    transform: translateY(-30px);
+                }
+                
+            }
+        }
+        
+    }
+}
