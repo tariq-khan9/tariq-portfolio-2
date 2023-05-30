@@ -8,6 +8,7 @@ import app from './components/sass/app.scss';
 import Sidebar from './components/Sidebar';
 
 import Projects from './components/Projects';
+import Works from './components/works/Works';
 
 
 
@@ -21,7 +22,7 @@ function App() {
       <Intro/>
       <Slider2/>
       <Projects/>
-      <Testimonials/>
+      <Works/>
       <Contact/>
       </div>
       

@@ -1,5 +1,6 @@
 import React from 'react'
 import testimonials from './sass/testimonials.scss'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function Testimonials() {
   const MernData = [
@@ -24,7 +25,12 @@ export default function Testimonials() {
   
   return (
     <div className='testimonials' id='testimonials'>
-       
+       <div className="arrowLeft">
+      <ArrowForwardIosIcon fontSize='larger' color='secondary'/>
+      </div>
+      <div className="arrowRight">
+      <ArrowForwardIosIcon fontSize='larger' color='secondary'/>
+      </div>
       <div className="main">
       {MernData.map((item) => (
         <div className="slider">
@@ -40,7 +46,7 @@ export default function Testimonials() {
         </div>
         ))}
       </div>
-      
+     
     </div>
   )
 }
