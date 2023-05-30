@@ -21,6 +21,7 @@ function App() {
       <Intro/>
       <Slider2/>
       <Projects/>
+      <Testimonials/>
       <Contact/>
       </div>
       

@@ -29,23 +29,23 @@ export default function Slider2() {
   return (
     <div className='slider' id='slider'>
       <Grid container className='slides'>
-        
+         {items.map((item, i)=>(<>
             <Grid item lg={6} className='left'>
-            {items.map((item, i)=>(<>
+            
             <h2 key={i}>{item.name}</h2>
             <p key={i}>{item.description}</p>
-            </>
-            ))}
-            </Grid>
-          <Grid item lg={6} className='right'>
             
-            <img src=''/>
+            </Grid>
+            <Grid item lg={6} className='right'>
+            
+            <img src={item.image}/>
             <div>
             <img src=''/>
             </div>
           </Grid> 
-          
-            </Grid>
+          </>
+          ))}
+      </Grid>
     </div>
   )
 }

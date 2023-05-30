@@ -1,3 +1,44 @@
 .testimonials {
-  //  background-color: chartreuse;
+    background-color: rgb(233, 237, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .main{
+      background-color: aquamarine;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      //justify-content: center;
+      //align-items: center;
+      position: absolute;
+     // left: 0vw;
+      .slider{
+        background-color: coral;
+        height: 100vh;
+        width: 100vw;
+        //padding: 30px;
+       // left: -200vw;
+        display: flex;
+        
+        flex-direction: row;
+        //align-items: center;
+        //justify-content: center;
+        .text{
+          display: flex;
+          //flex-direction: column;
+          width: 50vw;
+          padding: 30px;
+          color: blue;
+        }
+        .image{
+          display: flex;
+          width: 50vw;
+          color: aquamarine;
+        }
+        
+        
+      }
+    }
 }

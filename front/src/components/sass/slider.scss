@@ -1,15 +1,24 @@
 .slider {
-  //  background-color: coral;
+   background-color: coral;
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   align-items: center;
+   justify-content: center;
   .slides{
-    background: transparent;
+    background: burlywood;
     color: #ffffff;
     height: 80vh;
-   
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    left: -100vw;
 
   .left{
    padding: 40px;
    display: flex;
    height: 90vh;
+  
    flex-direction: column;
    justify-content: center;
    align-items: center;
